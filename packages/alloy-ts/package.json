@@ -1,17 +1,17 @@
 {
   "name": "@jeonhui/alloy-ts",
   "version": "0.0.1",
-  "private": true,
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "publish": "pnpm publish"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@jeonhui/eslint-config": "workspace:*",
+    "@jeonhui/typescript-config": "workspace:*",
     "@types/node": "^22.15.3",
     "eslint": "^9.34.0",
     "typescript": "5.9.2"
@@ -19,5 +19,25 @@
   "dependencies": {
     "ts-pattern": "^5.8.0",
     "type-fest": "^4.41.0"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jeonhui/alloy.git",
+    "directory": "packages/alloy-ts"
+  },
+  "keywords": [
+    "typescript",
+    "utility",
+    "types",
+    "patterns"
+  ],
+  "author": "Jeonhui",
+  "license": "MIT"
 }
