@@ -67,33 +67,6 @@ yarn add @jeonhui/alloy-ts
 
 ---
 
-## 🚀 Development Workflow
-
-### Version Management with Changesets
-
-This project uses [Changesets](https://github.com/changesets/changesets) for version management and changelog
-generation.
-
-```bash
-# Create a changeset for your changes
-pnpm changeset
-
-# Update package versions based on changesets
-pnpm version-packages
-
-# Publish packages to npm
-pnpm release
-```
-
-### Traditional Version Management
-
-```bash
-# Update all packages at once
-pnpm version:patch   # 0.0.1 → 0.0.2
-pnpm version:minor   # 0.0.1 → 0.1.0
-pnpm version:major   # 0.0.1 → 1.0.0
-```
-
 ## ⚙️ Tech Stack
 
 | Tool                  | Purpose                                     |
