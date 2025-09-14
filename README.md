@@ -6,7 +6,6 @@
 
 *A curated collection of commonly used TypeScript utility libraries bundled into a single package for convenient development.*
 
-[![npm version](https://img.shields.io/npm/v/@jeonhui/alloy-ts?style=flat-square)](https://www.npmjs.com/package/@jeonhui/alloy-ts)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9+-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![pnpm](https://img.shields.io/badge/pnpm-workspace-orange?style=flat-square&logo=pnpm)](https://pnpm.io/)
@@ -22,6 +21,8 @@ Reduce the repetitive installation and import of commonly used TypeScript librar
 ## 📦 Packages
 
 ### `@jeonhui/alloy-ts`
+
+[![npm version](https://img.shields.io/npm/v/@jeonhui/alloy-ts?style=flat-square)](https://www.npmjs.com/package/@jeonhui/alloy-ts)
 
 **TypeScript Utility Library Collection**
 
@@ -62,12 +63,39 @@ yarn add @jeonhui/alloy-ts
 
 ---
 
+## 🚀 Development Workflow
+
+### Version Management with Changesets
+
+This project uses [Changesets](https://github.com/changesets/changesets) for version management and changelog generation.
+
+```bash
+# Create a changeset for your changes
+pnpm changeset
+
+# Update package versions based on changesets
+pnpm version-packages
+
+# Publish packages to npm
+pnpm release
+```
+
+### Traditional Version Management
+
+```bash
+# Update all packages at once
+pnpm version:patch   # 0.0.1 → 0.0.2
+pnpm version:minor   # 0.0.1 → 0.1.0
+pnpm version:major   # 0.0.1 → 1.0.0
+```
+
 ## ⚙️ Tech Stack
 
 | Tool | Purpose |
 |------|---------|
 | **pnpm + Turbo** | Monorepo workspace management |
 | **tsup** | Bundling ESM/CJS with type declarations |
+| **Changesets** | Version management and changelog generation |
 | **TypeScript** | Language with strict settings |
 | **ESLint + Prettier** | Code linting and formatting |
 

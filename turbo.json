@@ -17,6 +17,9 @@
       "cache": false,
       "persistent": true
     },
+    "clean": {
+      "cache": false
+    },
     "publish": {
       "dependsOn": ["build", "test", "lint"]
     }

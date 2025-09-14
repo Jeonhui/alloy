@@ -343,3 +343,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+### Turbo ###
+# Turborepo task cache
+.turbo

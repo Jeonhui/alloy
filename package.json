@@ -7,6 +7,10 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
+    "clean": "turbo run clean",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish",
     "publish:packages": "turbo run publish",
     "publish:alloy-ts": "pnpm --filter @jeonhui/alloy-ts publish",
     "version:patch": "pnpm -r version patch",
@@ -14,6 +18,7 @@
     "version:major": "pnpm -r version major"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.7",
     "prettier": "^3.6.2",
     "tsup": "^8.5.0",
     "turbo": "^2.5.6",
