@@ -1,10 +1,13 @@
+[//]: # (Alloy - TypeScript Utility Library Collection)
+
 <div align="center">
 
 # ⚡ Alloy
 
 **TypeScript Utility Library Collection**
 
-*A curated collection of commonly used TypeScript utility libraries bundled into a single package for convenient development.*
+*A curated collection of commonly used TypeScript utility libraries bundled into a single package for convenient
+development.*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9+-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
@@ -16,7 +19,8 @@
 
 ## 🎯 Purpose
 
-Reduce the repetitive installation and import of commonly used TypeScript libraries by bundling them into a single package, improving developer productivity and workflow efficiency.
+Reduce the repetitive installation and import of commonly used TypeScript libraries by bundling them into a single
+package, improving developer productivity and workflow efficiency.
 
 ## 📦 Packages
 
@@ -34,14 +38,14 @@ This package bundles commonly used TypeScript libraries:
 ### Usage
 
 ```typescript
-import { match, P } from '@jeonhui/alloy-ts';
-import type { Simplify, OptionalKeys } from '@jeonhui/alloy-ts';
+import {match, P} from '@jeonhui/alloy-ts';
+import type {Simplify, OptionalKeys} from '@jeonhui/alloy-ts';
 
 // Using ts-pattern
 const result = match(value)
-  .with(P.string, (str) => `String: ${str}`)
-  .with(P.number, (num) => `Number: ${num}`)
-  .exhaustive();
+    .with(P.string, (str) => `String: ${str}`)
+    .with(P.number, (num) => `Number: ${num}`)
+    .exhaustive();
 
 // Using type-fest
 type Simplified = Simplify<ComplexType>;
@@ -67,7 +71,8 @@ yarn add @jeonhui/alloy-ts
 
 ### Version Management with Changesets
 
-This project uses [Changesets](https://github.com/changesets/changesets) for version management and changelog generation.
+This project uses [Changesets](https://github.com/changesets/changesets) for version management and changelog
+generation.
 
 ```bash
 # Create a changeset for your changes
@@ -91,13 +96,13 @@ pnpm version:major   # 0.0.1 → 1.0.0
 
 ## ⚙️ Tech Stack
 
-| Tool | Purpose |
-|------|---------|
-| **pnpm + Turbo** | Monorepo workspace management |
-| **tsup** | Bundling ESM/CJS with type declarations |
-| **Changesets** | Version management and changelog generation |
-| **TypeScript** | Language with strict settings |
-| **ESLint + Prettier** | Code linting and formatting |
+| Tool                  | Purpose                                     |
+|-----------------------|---------------------------------------------|
+| **pnpm + Turbo**      | Monorepo workspace management               |
+| **tsup**              | Bundling ESM/CJS with type declarations     |
+| **Changesets**        | Version management and changelog generation |
+| **TypeScript**        | Language with strict settings               |
+| **ESLint + Prettier** | Code linting and formatting                 |
 
 ---
 
